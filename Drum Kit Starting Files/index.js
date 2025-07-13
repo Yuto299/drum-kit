@@ -4,10 +4,12 @@ for (let i = 0; i < numberOfButton; i++) {
   document
     .querySelectorAll(".drum")
     [i].addEventListener("click", function handleClick() {
-      const audio = new Audio("sounds/tom-1.mp3");
-      audio.play();
+      this.style.color = "red";
     });
 }
+
+// const audio = new Audio("sounds/tom-1.mp3");
+// audio.play();
 
 // function add(num1, num2) {
 //   return num1 + num2;
